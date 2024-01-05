@@ -1,0 +1,39 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-section, .about-content{
+  animation: fade-in 1s ease-out;
+}
+
+
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    background-color: #f8f9fa;
+  }
+  
+  .about-content {
+    text-align: center;
+    max-width: 800px;
+  }
+  
+  h2 {
+    color: #007bff;
+  }
+  
+  p {
+    color: #555;
+    line-height: 1.6;
+  }
+  

@@ -1,0 +1,95 @@
+
+
+.main-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .left-section {
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 600;
+  }
+
+  .left-section:hover {
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: none;
+  }
+
+  .right-section {
+    display: flex;
+    align-items: center;
+  }
+
+  .right-section nav ul li :hover {
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+  }
+  
+  .right-section nav {
+    display: flex;
+  }
+  
+  .right-section nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+  }
+  
+  .right-section nav ul li {
+    font-size: 25px;
+    border: none;
+  }
+  
+  .right-section nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+ 
+  @media screen and (max-width: 768px) {
+    .right-section nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+    }
+  
+    .right-section.open nav {
+      display: flex;
+    }
+  
+    .menu-icon {
+      display: flex;
+    }
+    .right-section nav ul {
+        gap: 5px;
+        margin: 4px;
+        padding: 4px;
+      font-size: 10px;
+      }
+  }
+  
